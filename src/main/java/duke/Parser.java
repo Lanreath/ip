@@ -1,4 +1,6 @@
 package duke;
+import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
 
 import duke.command.Command;
 import duke.command.CreateDeadline;
@@ -11,16 +13,13 @@ import duke.command.List;
 import duke.command.Mark;
 import duke.command.Unmark;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeParseException;
-
 /**
  * Parses user input.
  */
 public class Parser {
     /**
      * Parses a command string into a Command object.
-     * 
+     *
      * @param fullCommand the command string to parse.
      * @return the Command object.
      * @throws DukeException
@@ -101,10 +100,10 @@ public class Parser {
 
     /**
      * Parses a date string into a LocalDate object.
-     * 
+     *
      * @param date the date string to parse.
      * @return the LocalDate object.
-     * @throws DukeException 
+     * @throws DukeException
      */
     public static LocalDate parseDate(String date) throws DukeException {
         try {

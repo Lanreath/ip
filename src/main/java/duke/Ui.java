@@ -23,10 +23,10 @@ public class Ui {
      */
     public void showWelcome() {
         String logo = " ____        _        \n"
-        + "|  _ \\ _   _| | _____ \n"
-        + "| | | | | | | |/ / _ \\\n"
-        + "| |_| | |_| |   <  __/\n"
-        + "|____/ \\__,_|_|\\_\\___|\n";
+            + "|  _ \\ _   _| | _____ \n"
+            + "| | | | | | | |/ / _ \\\n"
+            + "| |_| | |_| |   <  __/\n"
+            + "|____/ \\__,_|_|\\_\\___|\n";
         System.out.println("Hello from\n" + logo);
     }
 
@@ -46,19 +46,19 @@ public class Ui {
 
     /**
      * Display the given list of tasks.
-     * 
+     *
      * @param list the list of tasks to display.
      */
     public void showList(TaskList list) {
         System.out.println("Here are the tasks in your list:");
         for (int i = 0; i < list.size(); i++) {
-            System.out.println((i+1) + ". " + list.get(i));
+            System.out.println((i + 1) + ". " + list.get(i));
         }
     }
 
     /**
      * Display the successful marking of a task.
-     * 
+     *
      * @param task the task that was marked.
      */
     public void showMark(Task task) {
@@ -68,7 +68,7 @@ public class Ui {
 
     /**
      * Display the successful unmarking of a task.
-     * 
+     *
      * @param task the task that was unmarked.
      */
     public void showUnmark(Task task) {
@@ -78,7 +78,7 @@ public class Ui {
 
     /**
      * Display the successful addition of a task.
-     * 
+     *
      * @param task the task that was added.
      * @param size the size of the list after the addition.
      */
@@ -90,7 +90,7 @@ public class Ui {
 
     /**
      * Display the successful deletion of a task.
-     * 
+     *
      * @param task the task that was deleted.
      * @param size the size of the list after the deletion.
      */
@@ -100,10 +100,15 @@ public class Ui {
         System.out.println("Now you have " + size + " tasks in the list.");
     }
 
+    /**
+     * Display the successful finding of a task.
+     *
+     * @param list the list of tasks that were found.
+     */
     public void showFind(TaskList list) {
         System.out.println("Here are the matching tasks in your list:");
         for (int i = 0; i < list.size(); i++) {
-            System.out.println((i+1) + ". " + list.get(i));
+            System.out.println((i + 1) + ". " + list.get(i));
         }
     }
 
@@ -120,7 +125,7 @@ public class Ui {
 
     /**
      * Display the error message for the given exception.
-     * 
+     *
      * @param message the error message to display.
      */
     public void showError(String message) {
@@ -129,7 +134,7 @@ public class Ui {
 
     /**
      * Read the user input.
-     * 
+     *
      * @return the user input string.
      */
     public String readCommand() {

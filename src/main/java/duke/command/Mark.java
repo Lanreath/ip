@@ -6,6 +6,9 @@ import duke.TaskList;
 import duke.Ui;
 import duke.task.Task;
 
+/**
+ * Represents a command that marks a task as done.
+ */
 public class Mark extends Command {
     private Integer index;
 
@@ -18,7 +21,7 @@ public class Mark extends Command {
         if (index > tasks.size() || index < 1) {
             throw new DukeException("Please specify a valid task number.");
         }
-        Task t = tasks.get(index-1);
+        Task t = tasks.get(index - 1);
         t.setDone();
         ui.showMark(t);
     }

@@ -6,6 +6,9 @@ import duke.TaskList;
 import duke.Ui;
 import duke.task.Task;
 
+/**
+ * Represents a command that deletes a Task.
+ */
 public class Delete extends Command {
     private Integer index;
 
@@ -18,8 +21,8 @@ public class Delete extends Command {
         if (index > tasks.size() || index < 1) {
             throw new DukeException("Please specify a valid task number.");
         }
-        Task t = tasks.get(index-1);
-        tasks.remove(index-1);
+        Task t = tasks.get(index - 1);
+        tasks.remove(index - 1);
         ui.showDelete(t, tasks.size());
     }
 }

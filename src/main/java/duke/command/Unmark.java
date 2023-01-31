@@ -6,6 +6,9 @@ import duke.TaskList;
 import duke.Ui;
 import duke.task.Task;
 
+/**
+ * Represents a command that unmarks a Task as done.
+ */
 public class Unmark extends Command {
     private Integer index;
 
@@ -18,9 +21,9 @@ public class Unmark extends Command {
         if (index > tasks.size() || index < 1) {
             throw new DukeException("Please specify a valid task number.");
         }
-        Task t = tasks.get(index-1);
+        Task t = tasks.get(index - 1);
         t.setNotDone();
         ui.showUnmark(t);
     }
-    
+
 }

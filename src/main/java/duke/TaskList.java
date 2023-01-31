@@ -1,16 +1,15 @@
 package duke;
-
 import java.util.ArrayList;
 
 import duke.task.Task;
 
 /**
- * TaskList is a wrapper class for ArrayList<Task> that contains the list of tasks.
+ * TaskList is a wrapper class for ArrayList/<Task/> that contains the list of tasks.
  */
 public class TaskList extends ArrayList<Task> {
     /**
      * Constructor for TaskList.
-     * 
+     *
      * @param list the ArrayList of tasks.
      */
     public TaskList(ArrayList<Task> list) {

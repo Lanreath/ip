@@ -8,10 +8,19 @@ import duke.TaskList;
 import duke.Ui;
 import duke.task.Deadline;
 
+/**
+ * Represents a command that creates a new Deadline task.
+ */
 public class CreateDeadline extends Command {
     private String desc;
     private LocalDate by;
 
+    /**
+     * Creates a new CreateDeadline command.
+     *
+     * @param desc Description of the task.
+     * @param by Deadline of the task.
+     */
     public CreateDeadline(String desc, LocalDate by) {
         this.desc = desc;
         this.by = by;

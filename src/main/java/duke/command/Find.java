@@ -6,6 +6,9 @@ import duke.TaskList;
 import duke.Ui;
 import duke.task.Task;
 
+/**
+ * Represents a command that finds tasks that match a keyword.
+ */
 public class Find extends Command {
     private String keyword;
 
@@ -23,5 +26,5 @@ public class Find extends Command {
         }
         ui.showFind(matches);
     };
-    
+
 }

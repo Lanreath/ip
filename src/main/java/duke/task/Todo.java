@@ -6,7 +6,7 @@ package duke.task;
 public class Todo extends Task {
     /**
      * Constructor for Todo.
-     * 
+     *
      * @param description the description of the todo task.
      * @param isDone whether the todo task is done.
      */
@@ -16,7 +16,7 @@ public class Todo extends Task {
 
     /**
      * Formats the todo task for user output.
-     * 
+     *
      * @return the string representation of the todo task for user output.
      */
     @Override
@@ -26,7 +26,7 @@ public class Todo extends Task {
 
     /**
      * Formats the todo task for file output.
-     * 
+     *
      * @return the string representation of the todo task for file output.
      */
     public String toFile() {

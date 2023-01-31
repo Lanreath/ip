@@ -12,7 +12,7 @@ public class Deadline extends Task {
 
     /**
      * Constructor for Deadline.
-     * 
+     *
      * @param description the description of the deadline.
      * @param by the date of the deadline.
      * @param isDone whether the deadline is done.
@@ -21,20 +21,21 @@ public class Deadline extends Task {
         super(description, isDone);
         this.by = by;
     }
-    
+
     /**
      * Formats the deadline for user output.
-     * 
+     *
      * @return the string representation of the deadline for user output.
      */
     @Override
     public String toString() {
-        return "[D][" + this.getStatusIcon() + "] " + this.getDescription() + " (by: " + this.by.format(DateTimeFormatter.ofPattern("MMM d yyyy")) + ")";
+        return "[D][" + this.getStatusIcon() + "] " + this.getDescription()
+            + " (by: " + this.by.format(DateTimeFormatter.ofPattern("MMM d yyyy")) + ")";
     }
 
     /**
      * Formats the deadline for file output.
-     * 
+     *
      * @return the string representation of the deadline for file output.
      */
     public String toFile() {

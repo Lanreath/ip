@@ -12,7 +12,7 @@ public abstract class Task {
 
     /**
      * Constructor for Task.
-     * 
+     *
      * @param description the description of the task.
      * @param isDone whether the task is done.
      */
@@ -23,7 +23,7 @@ public abstract class Task {
 
     /**
      * Returns the status icon of the task.
-     * 
+     *
      * @return the status icon of the task.
      */
     public String getStatusIcon() {
@@ -32,7 +32,7 @@ public abstract class Task {
 
     /**
      * Returns the description of the task.
-     * 
+     *
      * @return the description of the task.
      */
     public String getDescription() {
@@ -55,8 +55,8 @@ public abstract class Task {
 
     /**
      * Returns the string representation of the task.
-     * 
+     *
      * @return the string representation of the task.
      */
-    abstract public String toFile();
+    public abstract String toFile();
 }

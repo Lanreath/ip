@@ -21,7 +21,7 @@ public class Storage {
 
     /**
      * Constructor for Storage class.
-     * 
+     *
      * @param filePath the path of the file to save and load tasks from.
      * @throws DukeException
      */
@@ -39,7 +39,7 @@ public class Storage {
 
     /**
      * Load the tasks from the file.
-     * 
+     *
      * @return the ArrayList of tasks.
      * @throws DukeException
      */
@@ -71,6 +71,8 @@ public class Storage {
                             split[1].equals("1")
                     ));
                     break;
+                default:
+                    throw new DukeException("Invalid task type.");
                 }
             }
             s.close();
@@ -82,7 +84,7 @@ public class Storage {
 
     /**
      * Saves the tasks to the file.
-     * 
+     *
      * @param list the ArrayList of tasks to save.
      * @throws DukeException
      */

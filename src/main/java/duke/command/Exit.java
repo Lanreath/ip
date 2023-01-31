@@ -5,6 +5,9 @@ import duke.Storage;
 import duke.TaskList;
 import duke.Ui;
 
+/**
+ * Represents a command that exits the program.
+ */
 public class Exit extends Command {
     public Exit() {
         super();

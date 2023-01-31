@@ -5,6 +5,9 @@ import duke.Storage;
 import duke.TaskList;
 import duke.Ui;
 
+/**
+ * Represents a command that lists all tasks.
+ */
 public class List extends Command {
     public List() {
         super();

@@ -15,7 +15,7 @@ public class Event extends Task {
 
     /**
      * Constructor for Event.
-     * 
+     *
      * @param description the description of the event.
      * @param start the start date of the event.
      * @param end the end date of the event.
@@ -29,17 +29,19 @@ public class Event extends Task {
 
     /**
      * Formats the event for user output.
-     * 
+     *
      * @return the string representation of the event for user output.
      */
     @Override
     public String toString() {
-        return "[E][" + this.getStatusIcon() + "] " + this.getDescription() + " (from: " + this.start.format(DateTimeFormatter.ofPattern("MMM d yyyy")) + " to: " + this.end.format(DateTimeFormatter.ofPattern("MMM d yyyy")) + ")";
+        return "[E][" + this.getStatusIcon() + "] " + this.getDescription()
+            + " (from: " + this.start.format(DateTimeFormatter.ofPattern("MMM d yyyy"))
+            + " to: " + this.end.format(DateTimeFormatter.ofPattern("MMM d yyyy")) + ")";
     }
 
     /**
      * Formats the event for file output.
-     * 
+     *
      * @return the string representation of the event for file output.
      */
     public String toFile() {
